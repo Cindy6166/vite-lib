@@ -1,0 +1,45 @@
+{
+  "name": "vite-lib",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cindy6166/vite-lib.git"
+  },
+  "keywords": [
+    "checkbox",
+    "vue3",
+    "vue",
+    "vuejs"
+  ],
+  "files": ["dist", "src/components/"],
+  "main": "./dist/checkbox.umd.cjs",
+  "module": "./dist/checkbox.js",
+  "exports": {
+    ".": {
+      "import": "./dist/checkbox.js",
+      "require": "./dist/checkbox.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "path": "^0.12.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.0",
+    "vue-tsc": "^1.8.5"
+  }
+}
